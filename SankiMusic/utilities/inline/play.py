@@ -136,7 +136,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
             ),
             InlineKeyboardButton(
                 text="❃ ᴊᴏɪɴ ❃",
-                url="https://t.me/ArchBots"
+                url="https://t.me/+GzXJir57KbswZjVl"
             )
         ],
     ]
