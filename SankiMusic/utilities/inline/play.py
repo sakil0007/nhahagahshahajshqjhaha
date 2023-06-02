@@ -1,11 +1,7 @@
 import math
-
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-
 from SankiMusic.utilities import config
 from SankiMusic.modules.utils.formatters import time_to_seconds
-
-
 
 ## After Edits with Timer Bar
 
@@ -66,7 +62,12 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
+                text="✯ ᴄʟᴏsᴇ ✯",
+                callback_data="close"
+            ),
+            InlineKeyboardButton(
+                text="💬Join",
+                url="https://t.me/ArchBots"
             )
         ],
     ]
@@ -130,7 +131,12 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
+                text="✯ ᴄʟᴏsᴇ ✯",
+                callback_data="close"
+            ),
+            InlineKeyboardButton(
+                text="❃ ᴊᴏɪɴ ❃",
+                url="https://t.me/ArchBots"
             )
         ],
     ]
@@ -141,10 +147,12 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="✭ ᴜᴘᴅᴀᴛᴇs ✭", url=config.SUPPORT_CHANNEL
+                text="✭ ᴜᴘᴅᴀᴛᴇs ✭",
+                url=config.SUPPORT_CHANNEL
             ),
             InlineKeyboardButton(
-                text="✭ sᴜᴘᴘᴏʀᴛ ✭", url=config.SUPPORT_GROUP
+                text="✭ sᴜᴘᴘᴏʀᴛ ✭",
+                url=config.SUPPORT_GROUP
             )
         ],
         [
@@ -171,7 +179,12 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
+                text="✯ ᴄʟᴏsᴇ ✯",
+                callback_data="close"
+            ),
+            InlineKeyboardButton(
+                text="✾ ᴊᴏɪɴ ❃",
+                url="https://t.me/+GzXJir57KbswZjVl"
             )
         ],
     ]
@@ -182,10 +195,12 @@ def telegram_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="✭ ᴜᴘᴅᴀᴛᴇs ✭", url=config.SUPPORT_CHANNEL
+                text="✭ ᴜᴘᴅᴀᴛᴇs ✭",
+                url=config.SUPPORT_CHANNEL
             ),
             InlineKeyboardButton(
-                text="✭ sᴜᴘᴘᴏʀᴛ ✭", url=config.SUPPORT_GROUP
+                text="✭ sᴜᴘᴘᴏʀᴛ ✭",
+                url=config.SUPPORT_GROUP
             )
         ],
         [
@@ -212,11 +227,18 @@ def telegram_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
+                text="✯ ᴄʟᴏsᴇ ✯",
+                callback_data="close"
+            ),
+            InlineKeyboardButton(
+                text="❃ ᴊᴏɪɴ  ❃",
+                url="https://t.me/+GzXJir57KbswZjVl"
             )
         ],
     ]
+
     return buttons
+
 
 
 ## Search Query Inline
