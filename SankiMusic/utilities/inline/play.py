@@ -66,7 +66,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 callback_data="close"
             ),
             InlineKeyboardButton(
-                text="💬Join",
+                text="★ ᴊᴏɪɴ ★",
                 url="https://t.me/ArchBots"
             )
         ],
