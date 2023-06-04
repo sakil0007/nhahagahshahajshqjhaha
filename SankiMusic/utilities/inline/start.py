@@ -1,8 +1,6 @@
 from typing import Union
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-
 from SankiMusic.utilities.config import config
-
 
 def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
@@ -14,12 +12,12 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         ],
         [
             InlineKeyboardButton(
-                text="✮ sᴇᴛᴛɪɴɢs ✮", callback_data="settings_helper"
+                text="✮ sᴇᴛᴛɪɴɢs ✮",
+                callback_data="settings_helper"
             )
         ],
-     ]
+    ]
     return buttons
-
 
 def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
@@ -31,21 +29,18 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
         ],
         [
             InlineKeyboardButton(
-                text="❀⋟ ʜᴇʟᴘ ⋞❀", callback_data="settings_back_helper"
+                text="★ ʜᴇʟᴘ ☆",
+                callback_data="settings_back_helper"
             )
         ],
         [
             InlineKeyboardButton(
-                text="✭ ᴜᴘᴅᴀᴛᴇs ✭", url=config.SUPPORT_CHANNEL
+                text="✭ ᴜᴘᴅᴀᴛᴇs ✭",
+                url=config.SUPPORT_CHANNEL
             ),
             InlineKeyboardButton(
-                text="✭ sᴜᴘᴘᴏʀᴛ ✭", url=config.SUPPORT_GROUP
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text="✮ sᴏᴜʀᴄᴇ ✮", url="http://github.com/AnonymousX1025/AnonXMusic"
+                text="✭ sᴜᴘᴘᴏʀᴛ ✭",
+                url=config.SUPPORT_GROUP
             )
         ]
-     ]
- 
+    ]
