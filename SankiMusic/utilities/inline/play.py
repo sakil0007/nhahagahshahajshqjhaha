@@ -136,7 +136,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
             ),
             InlineKeyboardButton(
                 text="❃ ᴊᴏɪɴ ❃",
-                url="https://t.me/+GzXJir57KbswZjVl"
+                url="https://t.me/NKD_Korean_Group"
             )
         ],
     ]
@@ -184,7 +184,7 @@ def stream_markup(_, videoid, chat_id):
             ),
             InlineKeyboardButton(
                 text="✾ ᴊᴏɪɴ ❃",
-                url="https://t.me/+GzXJir57KbswZjVl"
+                url="https://t.me/NKD_Korean_Group"
             )
         ],
     ]
@@ -232,7 +232,7 @@ def telegram_markup(_, videoid, chat_id):
             ),
             InlineKeyboardButton(
                 text="❃ ᴊᴏɪɴ  ❃",
-                url="https://t.me/+GzXJir57KbswZjVl"
+                url="https://t.me/NKD_Korean_Group"
             )
         ],
     ]
